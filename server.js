@@ -15,7 +15,7 @@ const adminRouter = require("./Routes/adminRoute");
 app.use(express.json());
 app.use(
   cors({
-    origin: ["http://localhost:5173", "https://gadget-hub-projj.vercel.app/"],
+    origin: ["http://localhost:5173", "https://gadget-hub-projj.vercel.app"],
     credentials: true,
   }),
 );
