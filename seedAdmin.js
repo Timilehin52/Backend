@@ -11,9 +11,9 @@ async function seedAdmin() {
     });
     console.log("✅ Connected to MongoDB");
 
-    const email = "only1maniac007@gmail.com";
-    const phoneNumber = "07086440726";
-    const password = "Admin123!";
+    const email = "olami856@yahoo.com";
+    const phoneNumber = "07074023477";
+    const password = "Fashola225";
 
     const existingAdmin = await USER.findOne({ email });
 
@@ -28,7 +28,7 @@ async function seedAdmin() {
       const hashedPassword = await bcrypt.hash(password, 10);
       const admin = new USER({
         firstName: "Admin",
-        lastName: "Mojola",
+        lastName: "Timilehin",
         email,
         phoneNumber,
         password: hashedPassword,
